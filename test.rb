@@ -1,24 +1,7 @@
-puts "Ingrese combinación de letras."
-str = ARGV[0]
-str = gets.chomp
+var1 = ARGV[0].to_i
+suma = 0
 
-
-
-def fuerza(str)
-  chars = str.chars
-  sum= 0
-  string = ""
-  letra = "a"
-  if chars != letra
-    for i in ("a"..str)
-      string += letra
-      letra = letra.next
-      i = 1
-      for j in (1..i)
-        sum += j
-      end
-    end
-    puts "#{sum} intentos."
+for i in (1..var)
+  suma += i
 end
-end
-fuerza(str)
+print suma
